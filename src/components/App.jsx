@@ -13,7 +13,7 @@ function App(){
   function deleteNote(id){
     setNotes(allNotes => {
       return allNotes.filter((note, index) => {
-        return index != id;
+        return index !== id;
       })
     })
   }
